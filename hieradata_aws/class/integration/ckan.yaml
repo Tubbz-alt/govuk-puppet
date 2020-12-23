@@ -5,3 +5,6 @@ govuk_solr6::present: true
 
 govuk::apps::ckan::solr_core: ckan
 govuk::apps::ckan::solr_core_configset: ckan28
+
+govuk_jenkins::packages::govuk_python::apt_mirror_hostname: "%{hiera('apt_mirror_hostname')}"
+govuk_jenkins::packages::govuk_python::apt_mirror_gpg_key_fingerprint: "%{hiera('apt_mirror_fingerprint')}"
